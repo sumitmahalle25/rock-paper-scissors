@@ -1,5 +1,6 @@
 console.log("Hello World");
-
+let humanScore = 0;
+let computerScore = 0;
 function getComputerChoice() {
   const randomNumber = Math.floor(Math.random() * 3);
 
@@ -12,8 +13,7 @@ function getComputerChoice() {
   }
 }
 
-console.log(getComputerChoice());
-console.log(getComputerChoice());
-console.log(getComputerChoice());
-console.log(getComputerChoice());
-console.log(getComputerChoice());
+function getHumanChoice() {
+  const choice = prompt("Enter rock, paper, or scissors:");
+  return choice;
+}
